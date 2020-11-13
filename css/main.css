@@ -43,6 +43,7 @@ img {
   --team-bcg-color: #f5f4fa;
   --footer-bcg: #2f303a;
   --address-mail: rgba(255, 255, 255, 0.6);
+  --timing-function: cubic-bezier(0.4,0,0.2,1);
 }
 
 
@@ -71,7 +72,9 @@ img {
   align-items: center;
   justify-content: center ;
   height: 80px;
+
 }
+
 
 .navbar-portfolio{
   display: flex;
@@ -154,9 +157,30 @@ img {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  position: relative;
+  transition: opacity 250ms var(--timing-function);
+
  
 }
 
+.link-portfolio::after{
+content: '';
+
+width: 100%;
+height: 5px;
+color: red;
+
+position: absolute;
+left: 0;
+bottom: 0;
+opacity: 0;
+}
+
+.link-portfolio:hover::after{
+  opacity: 1;
+
+}
 
 .contacts{
   display: flex;
@@ -1206,7 +1230,7 @@ text-transform: uppercase;
   width: calc((100%-60px)/3);
 } */
 .card-portfolio{
-  
+  position: relative;
   width: 370px;
   height: 404px;
   
@@ -1225,12 +1249,33 @@ margin-right: 0;
 }
 
 
+/* делаем анимацию  */
+.card-portfolio{
+  position: relative;
+}
 
+.card-portfolio::after{
+  content: "Технокряк это";
+  background-color: rgba(0, 0, 0, 0.346);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.card-portfolio:hover, 
+.card-portfolio::after{
+  opacity: 1;
+}
 
 .card-image-portfolio{
   display: block;
+  position: absolute;
 
 }
+
+
 .card-content-portfolio{
  
   background: #FFFFFF;
