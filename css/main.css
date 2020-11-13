@@ -167,7 +167,7 @@ img {
 .link-portfolio::after{
 content: '';
 
-width: 100%;
+width: 0;
 height: 5px;
 color: red;
 
@@ -178,7 +178,8 @@ opacity: 0;
 }
 
 .link-portfolio:hover::after{
-  opacity: 1;
+  /* opacity: 1; */
+  widows: 100%;
 
 }
 
