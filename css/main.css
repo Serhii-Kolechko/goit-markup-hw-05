@@ -166,10 +166,11 @@ img {
 
 .link-portfolio::after{
 content: '';
-
-width: 0;
+display: block;
+width: 100%;
 height: 5px;
 color: red;
+border-radius: 2px;
 
 position: absolute;
 left: 0;
@@ -179,7 +180,7 @@ opacity: 0;
 
 .link-portfolio:hover::after{
   /* opacity: 1; */
-  widows: 100%;
+  width: 100%;
 
 }
 
@@ -1253,10 +1254,12 @@ margin-right: 0;
 /* делаем анимацию  */
 .card-portfolio{
   position: relative;
+  
 }
 
-.card-portfolio::after{
-  content: "Технокряк это";
+.card-portfolio::before{
+  content: "";
+  display: inline-block;
   background-color: rgba(0, 0, 0, 0.346);
   position: absolute;
   top: 0;
@@ -1264,18 +1267,18 @@ margin-right: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
+
+  transform: translateY(-100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-portfolio:hover, 
-.card-portfolio::after{
-  opacity: 1;
-}
+
+
 
 .card-image-portfolio{
   display: block;
-  position: absolute;
+  
 
 }
-
 
 .card-content-portfolio{
  
