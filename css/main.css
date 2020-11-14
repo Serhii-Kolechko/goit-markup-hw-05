@@ -1241,6 +1241,7 @@ text-transform: uppercase;
 
   overflow: hidden;
   border: 1px solid #EEEEEE;
+
 }
 
 .card-portfolio:nth-last-child(-n+3){
@@ -1250,10 +1251,58 @@ text-transform: uppercase;
 margin-right: 0;
 }
 
+.card-transit-text {
+position: absolute;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+width: 370px;
+height: 294px;
+background-color: rgba(33, 150, 243, 0.9);
+opacity: 0;
+
+
+
+}
+
+.card-transit-text p{
+  margin: 0;
+  padding: 63px 24px;
+  width: 322px;
+  height: 168px;
+}
+.card-transit-text:hover{
+  opacity: 1;
+}
+.card-image-portfolio::before{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+  
+}
+.card-image-portfolio:hover ::before{
+  opacity: 1;
+}
+.card-portfolio:hover .card-image-portfolio::before{
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+
+}
 
 /* делаем анимацию  */
 .card-portfolio{
-  position: relative;
+  
   
 }
 
@@ -1276,6 +1325,8 @@ margin-right: 0;
 
 .card-image-portfolio{
   display: block;
+  width: 370px;
+  height: 294px;
   
 
 }
