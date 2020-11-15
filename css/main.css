@@ -1489,10 +1489,15 @@ h4 {
   position: absolute;
   top: 0;
   right: 0;
+  border: 1px solid white;
+  background-color: #fff;
  
 }
 
 .icon-close{
+
 width: 30px;
 height: 30px;
-}
+fill: white;
+background-color: white;
+} 
