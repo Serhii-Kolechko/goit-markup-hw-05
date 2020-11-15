@@ -1500,4 +1500,6 @@ width: 30px;
 height: 30px;
 fill: white;
 background-color: white;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
 } 
