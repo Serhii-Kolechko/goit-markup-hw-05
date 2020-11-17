@@ -1455,6 +1455,31 @@ h4 {
   opacity: 0;
 }
 
+ .studio::before{
+   display: inline-block;
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 48px;
+   height: 4px;
+   background-color: var(--accent-color);
+   border-radius: 2px;
+   opacity: 1;
+ }
+ .portfolio::before{
+   display: inline-block;
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 48px;
+   height: 4px;
+   background-color: var(--accent-color);
+   border-radius: 2px;
+   opacity: 1;
+ }
+
 .link-portfolio:hover::before{
   opacity: 1;
 }
