@@ -44,16 +44,20 @@ img {
   --team-bcg-color: #f5f4fa;
   --footer-bcg: #2f303a;
   --address-mail: rgba(255, 255, 255, 0.6);
+  --time: 250ms;
+  --animate: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 /*/ здесь прописываем ховеры и фокусы /*/
 .link-portfolio:hover {
   color: var(--accent-color);
+  transition: all var(--time, --animate);
 }
 
 .link-portfolio:focus {
   color: var(--accent-color);
+  transition:  var(--time --animate);
 }
 
 /* section{
@@ -198,11 +202,13 @@ img {
 
 .link-mail:hover {
   color: var(--accent-color);
+  transition: all var(--time, --animate);
 }
 
 .link-mail:hover .envelope,
 .link-mail:focus .envelope {
   fill: var(--accent-color);
+  transition: all var(--time, --animate);
 }
 
 .mail-envelope {
@@ -234,11 +240,13 @@ img {
 
 .contacts-phone:hover {
   color: var(--accent-color);
+  transition: all var(--time, --animate);
 }
 
 .contacts-phone:hover .smartphone,
 .contacts-phone:focus .smartphone {
   fill: var(--accent-color);
+  transition: all var(--time, --animate);
 }
 
 /* закончили с элементами навбара */
@@ -664,11 +672,13 @@ h4 {
 .social-networks-link:hover .social-networks-icons {
 
   fill: white;
+  transition: all var(--time, --animate);
 
 }
 
 .social-networks-link:hover {
   background-color: #2196F3;
+  transition: all var(--time, --animate);
 
 }
 
@@ -826,10 +836,12 @@ h4 {
 
 .list-element:hover .logo {
   fill: #2196F3;
+  transition: all var(--time, --animate);
 }
 
 .list-element:hover .clients-link {
   border-color: #2196F3;
+  transition: all var(--time, --animate);
 }
 
 .list-element {
@@ -1013,6 +1025,7 @@ h4 {
 .footer-networks-link:hover,
 .footer-networks-link:focus {
   background-color: #2196F3;
+  transition: all var(--time, --animate);
 }
 
 
@@ -1030,10 +1043,12 @@ h4 {
 
 .link-portfolio:hover {
   color: var(--accent-color);
+  transition: all var(--time, --animate);
 }
 
 .link-portfolio:focus {
   color: var(--accent-color);
+  transition: all var(--time, --animate);
 }
 
 
@@ -1223,26 +1238,31 @@ h4 {
 .button-items-all:hover {
   background-color: #2196F3;
   color: white;
+  transition: all var(--time, --animate);
 }
 
 .button-items-website:hover {
   background-color: #2196F3;
   color: white;
+  transition: all var(--time, --animate);
 }
 
 .button-items-apps:hover {
   background-color: #2196F3;
   color: white;
+  transition: all var(--time, --animate);
 }
 
 .button-items-disign:hover {
   background-color: #2196F3;
   color: white;
+  transition: all var(--time, --animate);
 }
 
 .button-items-marketing:hover {
   background-color: #2196F3;
   color: white;
+  transition: all var(--time, --animate);
 }
 
 /* картинки */
@@ -1347,6 +1367,7 @@ h4 {
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: all var(--time, --animate);
 
 }
 
@@ -1378,8 +1399,8 @@ h4 {
 .card-portfolio:hover .product-thumb::before {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: all var(--time, --animate);
 
 }
 
@@ -1399,7 +1420,8 @@ h4 {
 .card-portfolio:hover .transition-text {
   opacity: 1;
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: all var(--time, --animate);
 
 
 }
@@ -1487,6 +1509,7 @@ h4 {
 
 .link-portfolio:hover::before{
   opacity: 1;
+  transition: all var(--time, --animate);
 }
 .portfolio-index::before{
    display: inline-block;
@@ -1502,6 +1525,7 @@ h4 {
 }
 .portfolio-index:hover::before{
   opacity: 1;
+  transition: all var(--time, --animate);
 }
 
 .hero{
