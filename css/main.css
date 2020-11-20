@@ -1533,6 +1533,24 @@ display: flex;
   opacity: 1;
   transition: all var(--time, --animate);
 }
+.contact::before{
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 68px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+.contact:hover::before{
+   opacity: 1;
+   transition: all var(--time, --animate);
+}
+
+
 
 .hero{
   position: relative;
